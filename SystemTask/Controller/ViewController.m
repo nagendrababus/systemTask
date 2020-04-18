@@ -80,6 +80,8 @@
         [countries addObject:model];
     }
     
+    /// MARK: - Filter the array in alphabetical order
+    
     NSSortDescriptor *sortByName =
     [[NSSortDescriptor alloc] initWithKey:@"name"
                                 ascending:YES
