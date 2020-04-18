@@ -9,12 +9,12 @@
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
        self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-        ViewController *controller = [[ViewController alloc] init];
-        controller.view.backgroundColor = [UIColor redColor];
-        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+       ViewController *controller = [[ViewController alloc] init];
+       controller.view.backgroundColor = [UIColor redColor];
+       UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
         self.window.rootViewController = navController;
         [self.window makeKeyAndVisible];
-    self.window.windowScene = scene;
+        self.window.windowScene = scene;
 }
 
 

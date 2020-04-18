@@ -19,7 +19,6 @@
 
 /// MARK: - Property outlets
 
-@property (strong,nonatomic) UITableView *table;
 @property (strong,nonatomic) UITableView *tableView;
 
 
@@ -119,7 +118,7 @@
 {
     static NSString *cellIdentifier = @"cellIdentifier";
     
-    UITableViewCell *cell = [self.table dequeueReusableCellWithIdentifier:cellIdentifier];
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if(cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
